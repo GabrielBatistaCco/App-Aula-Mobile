@@ -9,7 +9,7 @@
     ],
     "version": "1.7.1",
     "orientation": "portrait",
-    "icon": "./assets/rick-icon.png",
+    "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "cover",
@@ -25,11 +25,6 @@
       "supportsTablet": true
     },
     "description": "Argon React Native, based on Argon Design System. Coded by Creative Tim",
-    "extra": {
-      "eas": {
-        "projectId": "f36fbf68-0214-4315-8f13-93ae524e3598"
-      }
-    },
     "android": {
       "package": "com.guilherme.piasson.uceffapp20232"
     }

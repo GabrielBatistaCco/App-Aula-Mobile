@@ -192,3 +192,13 @@ Dribbble: <https://dribbble.com/creativetim>
 
 Instagram: <https://www.instagram.com/CreativeTimOfficial>
 
+## Installation guide
+
+````bash
+npm install --legacy-peer-deps --force
+````
+
+## Start server
+````bash
+npx expo start
+````
