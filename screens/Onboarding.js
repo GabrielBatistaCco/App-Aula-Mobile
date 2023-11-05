@@ -50,14 +50,6 @@ class Onboarding extends React.Component {
                 >
                   Camera
                 </Button>
-                <Button
-                  style={styles.button}
-                  color={"green"}
-                  onPress={() => navigation.navigate("Nova Tela")}
-                  textStyle={{ color: argonTheme.COLORS.BLACK }}
-                >
-                  Aula 3
-                </Button>
               </Block>
           </Block>
         </Block>

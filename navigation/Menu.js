@@ -13,7 +13,7 @@ function CustomDrawerContent({
   state,
   ...rest
 }) {
-  const screens = ["Home", "Profile", "Account", "Elements", "Articles"];
+  const screens = ["Home", "Perfil", "Camera"];
   return (
     <Block
       style={styles.container}
@@ -34,22 +34,6 @@ function CustomDrawerContent({
               />
             );
           })}
-          <Block
-            flex
-            style={{ marginTop: 24, marginVertical: 8, paddingHorizontal: 8 }}
-          >
-            <Block
-              style={{
-                borderColor: "rgba(0,0,0,0.2)",
-                width: "100%",
-                borderWidth: StyleSheet.hairlineWidth,
-              }}
-            />
-            <Text color="#8898AA" style={{ marginTop: 16, marginLeft: 8 }}>
-              DOCUMENTATION
-            </Text>
-          </Block>
-          <DrawerCustomItem title="Getting Started" navigation={navigation} />
         </ScrollView>
       </Block>
     </Block>
@@ -64,7 +48,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 28,
     paddingBottom: theme.SIZES.BASE,
     paddingTop: theme.SIZES.BASE * 3,
-    justifyContent: "center",
+    justifyContent: "center"
   },
 });
 

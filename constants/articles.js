@@ -1,29 +1,30 @@
 export default [
   {
-    title: 'Ice cream is made with carrageenan …',
-    image: 'https://images.unsplash.com/photo-1516559828984-fb3b99548b21?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80',
-    cta: 'View article', 
+    title: 'Veja como um MBA te ajuda a se tornar um administrador de sucesso',
+    image: 'https://blog.uceff.edu.br/wp-content/uploads/2020/12/post_thumbnail-9a4ba038f755a4bf1d1cb66764c8bca3.jpg',
+    cta: 'Ver artigo', 
     horizontal: true
   },
   {
-    title: 'Is makeup one of your daily esse …',
-    image: 'https://images.unsplash.com/photo-1519368358672-25b03afee3bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2004&q=80',
-    cta: 'View article'
+    title: 'Veja como melhorar a concentração e crescer ainda mais na carreira',
+    image: 'https://blog.uceff.edu.br/wp-content/uploads/2020/12/post_thumbnail-7960edf7f8c63586e28ac61e7a4ff7aa.jpeg',
+    cta: 'Ver artigo'
   },
   {
-    title: 'Coffee is more than just a drink: It’s …',
-    image: 'https://images.unsplash.com/photo-1500522144261-ea64433bbe27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80',
-    cta: 'View article' 
+    title: 'Pedagogia ou letras? Veja as diferenças e como escolher!',
+    image: 'https://blog.uceff.edu.br/wp-content/uploads/2023/11/ucefffaculdades_uceff_image_751-1110x508.jpeg',
+    cta: 'Ver artigo' 
   },
   {
-    title: 'Fashion is a popular style, especially in …',
-    image: 'https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1326&q=80',
-    cta: 'View article' 
+    title: 'Tudo que você precisa saber sobre intraempreendedorismo',
+    image: 'https://blog.uceff.edu.br/wp-content/uploads/2020/12/post_thumbnail-5dc270a9fe2ffaa6dfe29c11d53226c3.jpeg',
+    cta: 'Ver artigo',
+    horizontal: true
   },
   {
-    title: 'Argon is a great free UI packag …',
-    image: 'https://images.unsplash.com/photo-1482686115713-0fbcaced6e28?fit=crop&w=1947&q=80',
-    cta: 'View article', 
+    title: 'Bacharelado ou licenciatura em educação física? Veja aqui!',
+    image: 'https://blog.uceff.edu.br/wp-content/uploads/2023/11/ucefffaculdades_uceff_image_737.jpeg',
+    cta: 'Ver artigo', 
     horizontal: true
   },
 ];

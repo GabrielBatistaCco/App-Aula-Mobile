@@ -3,7 +3,8 @@ import { View, Text, StyleSheet, TouchableOpacity, SafeAreaView, Modal, Image} f
 import { Camera } from 'expo-camera';
 import { FontAwesome } from '@expo/vector-icons';
 
-import Toast from 'react-native-simple-toast'; // Import Toast
+import Toast from 'react-native-simple-toast';
+import {Button} from "galio-framework"; // Import Toast
 
 export default function App(){
 
@@ -35,9 +36,7 @@ export default function App(){
             if(camRef){
                 const data = await camRef.current.takePictureAsync();
                 setCapturedPhoto(data.uri);
-                //console.log(capturedPhoto);
                 setOpen(true);
-                //console.log(data);
                 console.log(data);
                 Toast.show('Foto capturada', Toast.LONG);
             }
@@ -50,34 +49,42 @@ export default function App(){
 
         <SafeAreaView style={styles.container}>
             <Camera 
-                style={{flex: 1}}
+                style={{flex: 3}}
                 type={type}
                 ref={camRef}>
-                <View style={{flex: 1, backgroundColor:'transparent', flexDirection: 'row'}}>
-                    <TouchableOpacity style={{
-                        position:'absolute', 
-                        bottom : 20, 
-                        left : 20}} 
-                        onPress={ () => {
-                            setType ( 
-                                type === Camera.Constants.Type.back 
-                                ? Camera.Constants.Type.front 
-                                : Camera.Constants.Type.back 
-                            );
-                        }}>
-                        <Text style={{
-                            fontSize: 20, 
-                            marginBottom: 13, 
-                            color: '#FFF'}}> 
-                            Trocar Camera
-                        </Text>
-                    </TouchableOpacity>
-                </View>
             </Camera>
 
-            <TouchableOpacity style={styles.button} onPress={ takePicture }>
-                <FontAwesome name="camera" size={23} color='#FFF'/>
-            </TouchableOpacity>
+            <View style={{
+                flex: 1,
+                flexDirection: 'row',
+                justifyContent: "center",
+                alignItems: "center",
+            }}>
+                <Button
+                    color="secondary"
+                    textStyle={{ color: "black", fontSize: 12, fontWeight: "700" }}
+                    onPress={ () => {
+                        setType (
+                            type === Camera.Constants.Type.back
+                                ? Camera.Constants.Type.front
+                                : Camera.Constants.Type.back
+                        );
+                    }}>
+                    <Text style={{
+                        fontSize: 20,
+                        color: '#FFF'}}>
+                        Trocar Camera
+                    </Text>
+                </Button>
+                <Button
+                    color="primary"
+                    textStyle={{ color: "black", fontSize: 12, fontWeight: "700" }}
+                    onPress={ takePicture }
+                >
+                    <Text><FontAwesome name="camera" size={23} color='#FFF'/></Text>
+                </Button>
+            </View>
+
 
             {capturedPhoto && (
 				    <Modal
@@ -97,7 +104,6 @@ export default function App(){
 				                    width: '100%', 
 				                    height: 300, 
 				                    borderRadius: 20}}
-				                
 				                    source={{uri: capturedPhoto}}
 				            />
 				        </View>

@@ -1,8 +1,8 @@
 export default {
   COLORS: {
-    DEFAULT: '#172B4D',
-    PRIMARY: '#5E72E4',
-    SECONDARY: '#F7FAFC',
+    DEFAULT: '#575656',
+    PRIMARY: '#E95622',
+    SECONDARY: '#006B72',
     LABEL: '#FE2472',
     INFO: '#11CDEF',
     ERROR: '#F5365C',
@@ -13,7 +13,7 @@ export default {
     INPUT: '#DCDCDC',
     INPUT_SUCCESS: '#7BDEB2',
     INPUT_ERROR: '#FCB3A4',
-    ACTIVE: '#5E72E4', //same as primary
+    ACTIVE: '#E95622', //same as primary
     BUTTON_COLOR: '#9C26B0', //wtf
     PLACEHOLDER: '#9FA5AA',
     SWITCH_ON: '#5E72E4',

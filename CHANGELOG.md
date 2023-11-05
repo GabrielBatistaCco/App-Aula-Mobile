@@ -96,7 +96,7 @@
 
 ### Updated files
 
-- Profile.js - fixed elements regarding the Photo Album
+- Perfil.js - fixed elements regarding the Photo Album
 - Elements.js - ScrollView fixed by adding width, PR accepted which removed a duplicate styling [#24](https://github.com/creativetimofficial/argon-react-native/pull/24)
 - App.js - fixed Invariant Violation via PR [#29](https://github.com/creativetimofficial/argon-react-native/pull/29)
 

@@ -1,8 +1,13 @@
+import React from "react";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { createDrawerNavigator } from "@react-navigation/drawer";
+import { createStackNavigator } from "@react-navigation/stack";
+
 import { Animated, Dimensions, Easing } from "react-native";
 // header for screens
 import { Header, Icon } from "../components";
-import { argonTheme, tabs } from "../constants";
 
+import { argonTheme, tabs } from "../constants";
 import Articles from "../screens/Articles";
 import { Block } from "galio-framework";
 // drawer
@@ -11,17 +16,10 @@ import Elements from "../screens/Elements";
 // screens
 import Home from "../screens/Home";
 import Onboarding from "../screens/Onboarding";
-import NovaTela from "../screens/NovaTela";
 import Pro from "../screens/Pro";
-import Profile from "../screens/Profile";
-import React from "react";
+import Perfil from "../screens/Perfil";
 import Register from "../screens/Register";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { createDrawerNavigator } from "@react-navigation/drawer";
-import { createStackNavigator } from "@react-navigation/stack";
-
 import Camera  from "../screens/Camera";
-
 
 const { width } = Dimensions.get("screen");
 
@@ -107,24 +105,43 @@ function ArticlesStack(props) {
   );
 }
 
+function CameraStack(props) {
+    return (
+        <Stack.Navigator
+            screenOptions={{
+                mode: "card",
+                headerShown: "screen",
+            }}
+        >
+            <Stack.Screen
+                name="Camera"
+                component={Camera}
+                option={{
+                    headerTransparent: true,
+                }}
+            />
+        </Stack.Navigator>
+    );
+}
+
 function ProfileStack(props) {
   return (
     <Stack.Navigator
-      initialRouteName="Profile"
+      initialRouteName="Perfil"
       screenOptions={{
         mode: "card",
         headerShown: "screen",
       }}
     >
       <Stack.Screen
-        name="Profile"
-        component={Profile}
+        name="Perfil"
+        component={Perfil}
         options={{
           header: ({ navigation, scene }) => (
             <Header
               transparent
               white
-              title="Profile"
+              title="Perfil"
               navigation={navigation}
               scene={scene}
             />
@@ -179,28 +196,11 @@ function HomeStack(props) {
         }}
       />
 
-      <Stack.Screen
-        name="Pro"
-        component={Pro}
-        options={{
-          header: ({ navigation, scene }) => (
-            <Header
-              title=""
-              back
-              white
-              transparent
-              navigation={navigation}
-              scene={scene}
-            />
-          ),
-          headerTransparent: true,
-        }}
-      />
     </Stack.Navigator>
   );
 }
 
-export default function OnboardingStack(props) {
+function OnboardingStack(props) {
   return (
     <Stack.Navigator
       screenOptions={{
@@ -223,13 +223,6 @@ export default function OnboardingStack(props) {
           headerTransparent: true,
         }}
       />
-      <Stack.Screen
-        name="Nova Tela"
-        component={NovaTela}
-        option={{
-          headerTransparent: true,
-        }}
-      />
 
       <Stack.Screen
         name="Camera"
@@ -243,7 +236,7 @@ export default function OnboardingStack(props) {
   );
 }
 
-function AppStack(props) {
+export default function AppStack(props) {
   return (
     <Drawer.Navigator
       style={{ flex: 1 }}
@@ -283,29 +276,16 @@ function AppStack(props) {
       />
 
       <Drawer.Screen
-        name="Profile"
+        name="Perfil"
         component={ProfileStack}
         options={{
           headerShown: false,
         }}
       />
+
       <Drawer.Screen
-        name="Account"
-        component={Register}
-        options={{
-          headerShown: false,
-        }}
-      />
-      <Drawer.Screen
-        name="Elements"
-        component={ElementsStack}
-        options={{
-          headerShown: false,
-        }}
-      />
-      <Drawer.Screen
-        name="Articles"
-        component={ArticlesStack}
+        name="Camera"
+        component={CameraStack}
         options={{
           headerShown: false,
         }}

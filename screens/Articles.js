@@ -38,46 +38,6 @@ const categories = [
 ];
 
 class Articles extends React.Component {
-  renderProduct = (item, index) => {
-    const { navigation } = this.props;
-
-    return (
-      <TouchableWithoutFeedback
-        style={{ zIndex: 3 }}
-        key={`product-${item.title}`}
-        onPress={() => navigation.navigate("Pro", { product: item })}
-      >
-        <Block center style={styles.productItem}>
-          <Image
-            resizeMode="cover"
-            style={styles.productImage}
-            source={{ uri: item.image }}
-          />
-          <Block center style={{ paddingHorizontal: theme.SIZES.BASE }}>
-            <Text
-              center
-              size={16}
-              color={theme.COLORS.MUTED}
-              style={styles.productPrice}
-            >
-              {item.price}
-            </Text>
-            <Text center size={34}>
-              {item.title}
-            </Text>
-            <Text
-              center
-              size={16}
-              color={theme.COLORS.MUTED}
-              style={styles.productDescription}
-            >
-              {item.description}
-            </Text>
-          </Block>
-        </Block>
-      </TouchableWithoutFeedback>
-    );
-  };
 
   renderCards = () => {
     return (
@@ -98,7 +58,7 @@ class Articles extends React.Component {
             <Card item={articles[4]} full />
             <Block flex card shadow style={styles.category}>
               <ImageBackground
-                source={{ uri: Images.Products["View article"] }}
+                source={{ uri: Images.Products["Ver artigo"] }}
                 style={[
                   styles.imageBlock,
                   { width: width - theme.SIZES.BASE * 2, height: 252 },
@@ -110,7 +70,7 @@ class Articles extends React.Component {
               >
                 <Block style={styles.categoryTitle}>
                   <Text size={18} bold color={theme.COLORS.WHITE}>
-                    View article
+                    Ver artigo
                   </Text>
                 </Block>
               </ImageBackground>

@@ -58,9 +58,9 @@ Let us know your thoughts below. And good luck with development!
 
 ## Demo
 
-| Home Screen | Profile Screen | Elements Screen | Register Screen |
+| Home Screen | Perfil Screen | Elements Screen | Register Screen |
 | --- | --- | --- | --- |
-| [![Home Screen](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-react-native/home-screen.png)](https://demos.creative-tim.com/argon-react-native/) | [![Profile Screen](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-react-native/profile-screen.png)](https://demos.creative-tim.com/argon-react-native/) | [![Elements Screen](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-react-native/elements-screen.png)](https://demos.creative-tim.com/argon-react-native/) | [![Register Screen](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-react-native/register-screen.png)](https://demos.creative-tim.com/argon-react-native/) |
+| [![Home Screen](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-react-native/home-screen.png)](https://demos.creative-tim.com/argon-react-native/) | [![Perfil Screen](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-react-native/profile-screen.png)](https://demos.creative-tim.com/argon-react-native/) | [![Elements Screen](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-react-native/elements-screen.png)](https://demos.creative-tim.com/argon-react-native/) | [![Register Screen](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-react-native/register-screen.png)](https://demos.creative-tim.com/argon-react-native/) |
 
 - [Start page](https://demos.creative-tim.com/argon-react-native)
 - [How to install our free demo](https://demos.creative-tim.com/argon-react-native/docs/#/install)
@@ -113,7 +113,7 @@ argon-react-native/
 │   ├── Elements.js
 │   ├── Onboarding.js
 │   ├── Pro.js
-│   ├── Profile.js
+│   ├── Perfil.js
 │   └── Register.js
 
 ```

@@ -9,7 +9,7 @@
     ],
     "version": "1.7.1",
     "orientation": "portrait",
-    "icon": "./assets/rick-icon.png",
+    "icon": "./assets/uceff-icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "cover",
